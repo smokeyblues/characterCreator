@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app='CharCreator' lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CharacterCreator</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.min.css">
+
+    <!-- Angular Files  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+
+    <!-- my files  -->
+    <script src="/js/module.CharCreator.js"></script>
+    <script src="/js/controllers/controller.home.js" charset="utf-8"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body ng-controller="homeController as hc">
+    <ng-include src="'/html/navbar.html'"></ng-include>
+    <ng-view><h1>Content will go here... Eventually</h1></ng-view>
+    <ng-include src="'/html/footer.html'"></ng-include>
+
+
+    <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+  </body>
+</html>
